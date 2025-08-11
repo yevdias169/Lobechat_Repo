@@ -1,0 +1,14 @@
+services:
+  lobe-chat:
+    image: lobehub/lobe-chat:latest
+    container_name: lobe-chat
+    ports:
+      - "127.0.0.1:3211:3210"
+    env_file:
+      - .env
+    volumes:
+      - lobe_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  lobe_data:
