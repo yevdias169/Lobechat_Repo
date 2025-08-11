@@ -1,0 +1,22 @@
+# Ignore Git files
+.git
+.gitignore
+
+# Ignore local environment files and secrets
+.env
+.env.*
+
+# Ignore logs
+*.log
+
+# Ignore macOS / Windows system files
+.DS_Store
+Thumbs.db
+
+# Ignore local editor/project files
+.vscode/
+.idea/
+
+# Ignore folders not needed in the build context
+nginx/
+scripts/
