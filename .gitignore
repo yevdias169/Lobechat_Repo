@@ -1,0 +1,14 @@
+# Ignore environment files containing secrets
+.env
+.env.*
+
+# Ignore Docker volumes and data directories if created locally
+lobe_data
+*.log
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Git metadata in case of accidental nesting
+.git
